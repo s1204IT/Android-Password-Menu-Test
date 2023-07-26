@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.s1204.android.test.passwordmenu">
+
+    <application
+        android:icon="@android:mipmap/sym_def_app_icon"
+        android:label="Android Password Menu Test">
+
+        <activity
+            android:name=".Activity"
+            android:exported="true"
+            android:label="Password Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

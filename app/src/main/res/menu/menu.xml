@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity">
+
+    <item
+        android:id="@+id/action_advanced"
+        android:title="高度なオプション"
+        android:showAsAction="never" />
+</menu>
