@@ -8,6 +8,7 @@
 
         <activity
             android:name=".Activity"
+            android:excludeFromRecents="true"
             android:exported="true"
             android:label="Password Menu">
             <intent-filter>
