@@ -11,6 +11,4 @@
 
 ### TODO
 
-- When restarting the activity from "Recent", restart the activity from the beginning.
-- Prevent peeking at apps from "Recent". (Secure flag)
 - Fix cancel button behavior
