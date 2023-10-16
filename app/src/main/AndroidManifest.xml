@@ -8,8 +8,10 @@
 
         <activity
             android:name=".Activity"
+            android:excludeFromRecents="true"
             android:exported="true"
-            android:label="Password Menu">
+            android:label="Password Menu"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />

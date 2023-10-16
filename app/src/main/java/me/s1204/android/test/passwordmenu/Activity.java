@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
@@ -49,6 +50,7 @@ public class Activity extends android.app.Activity {
     @SuppressLint("SetTextI18n")
     public void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
+      getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
       final LinearLayout linearLayout = new LinearLayout(this);
       final TextView textView = new TextView(this);
@@ -61,8 +63,7 @@ public class Activity extends android.app.Activity {
         } catch (IOException ignored) {
         }
         final String passwordHashFromFile = passwordHashFromFileDec;
-        final EditText mEditText;
-        mEditText = new EditText(this);
+        final EditText mEditText = new EditText(this);
         mEditText.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD + 1);
         new AlertDialog.Builder(this).setTitle("パスワード")
           .setView(mEditText).setPositiveButton("OK", (dialogInterface, i) -> {
